@@ -1,31 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:stardust/view/home.dart'; // Import your HomeScreen widget
+import 'package:equit/view/home.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-class _MyAppState extends State<MyApp> {
-  // You can define state and methods here if needed
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'StarDust',
+      title: 'Equit',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      initialRoute: '/', // You can define your initial route if needed
-      routes: {
-        '/': (context) => HomeScreen(), // Define the route for HomeScreen
-        // Define other routes if needed
-      },
+      home: HomeScreen(),
     );
   }
 }
+

@@ -1,4 +1,4 @@
-name: stardust
+name: equit
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -36,8 +36,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  video_player: ^2.2.17
-
+  http : any
+  webview_flutter: ^2.0.0
+  rename: any
+  url_launcher: ^6.1.6
 
 dev_dependencies:
   flutter_test:
@@ -56,28 +58,19 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-     - assets/stardust1.0.jpeg
-     - assets/homebg.jpeg
-     - assets/bottle.jpeg
-     - assets/skribble.jpeg
-     - assets/yoga1.jpg
-     - assets/yoga2.jpg
-     - assets/yoga3.jpg
-     - assets/vidlist.jpeg
-     - assets/stardusticon.jpeg
-
-
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
+
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
@@ -86,15 +79,6 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-
-  fonts:
-    - family: Starstruck
-      fonts:
-        - asset: fonts/Starstruck.ttf
-    - family: Kinkie-Zpwm
-      fonts:
-        - asset: fonts/Kinkie-Zpwm.ttf
-
   # fonts:
   #   - family: Schyler
   #     fonts:

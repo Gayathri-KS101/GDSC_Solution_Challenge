@@ -1,4 +1,4 @@
-# stardust
+# equit
 
 A new Flutter project.
 
